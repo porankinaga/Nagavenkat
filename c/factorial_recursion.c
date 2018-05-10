@@ -11,7 +11,7 @@ printf("Factorial of %d is %d\n",a,x);
 
 int fact(int n)
 {
-	if(n>1)
+	if(n>=1)
 	{
 		return n*fact(n-1);
 	}
