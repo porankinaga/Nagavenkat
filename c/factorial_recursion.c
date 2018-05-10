@@ -5,7 +5,8 @@ main()
 int a,x;
 printf("Enter Value n");
 scanf("%d", &a);
-printf("Factorial of %d is %d\n",a,fact(a));
+x = fact(a);
+printf("Factorial of %d is %d\n",a,x);
 }
 
 int fact(int n)
