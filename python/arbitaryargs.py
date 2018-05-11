@@ -1,3 +1,6 @@
+import pdb 
+
+
 def arbitry(*names):
 	for name in names:
 		print("Hello",name)
