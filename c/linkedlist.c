@@ -7,17 +7,30 @@ struct node {
 main()
 {
 struct node *head = NULL;
+while(1)
+{
 int a;
-	append(&head);
-	add_node(&head);
-	append(&head);
-	append(&head);
-	append(&head);
-	append(&head);
-	
-	printlist(head);
-	reverse_list(&head);
-	printlist(head);
+printf("Enter option 1 or 2");
+scanf("%d", &a);
+switch(a)
+{
+	case 1:
+		append(&head);
+		add_node(&head);
+		append(&head);
+		break;
+	case 2:
+		append(&head);
+		append(&head);
+		append(&head);
+		break;
+	default:
+		printlist(head);
+		reverse_list(&head);
+		printlist(head);
+		break;
+}
+}
 }
 append(struct node **head_ref)
 {

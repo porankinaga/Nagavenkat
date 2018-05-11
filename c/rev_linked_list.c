@@ -71,17 +71,28 @@ int main()
 {
     /* Start with the empty list */
     struct Node* head = NULL;
-   
-     push(&head, 1);
-     push(&head, 2);
-     push(&head, 3); 
-     push(&head, 4);      
-     push(&head, 5);      
-     
+	int a;
+	while(1)
+	{
+		switch(a)
+		{
+			case 1:
+				 push(&head, 1);
+				 push(&head, 2);
+				 push(&head, 3); 
+				break;
+			case 2:
+				 push(&head, 4); 
+				 push(&head, 5);      
+				break;
+			default:
+				printf("Enter 1 or 2 ");
+				break;
+     		}
      printf("Given linked list\n");
      printList(head);    
      recursiveReverse(&head);                      
      printf("\nReversed Linked list \n");
      printList(head);    
      getchar();
-}
+}}
